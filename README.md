@@ -1,3 +1,2 @@
 # ikiliagwueloke.github.io
-Web-Dev portfolio
-Prototyped using Adobe XD
+Web-Dev portfolio, prototyped using Adobe XD

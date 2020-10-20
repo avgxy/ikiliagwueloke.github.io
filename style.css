@@ -1,193 +1,117 @@
-/* General Styling */
-:root {
-    --text-border: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-
-html {
+* {
+    box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    color: inherit;
 }
 
 body {
     margin: 0 auto;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    width: 90%;
+    height: 200vh;
 }
 
-a {
+ul, a {
     text-decoration: none;
+    list-style-type: none;
 }
 
-.container {
-    margin: 0 auto;
-    width: 85%;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1em;
+    margin: 0 4em;
+    height: 100vh;
 }
 
-
-
-/* Header and Navbar */
-.svg-logo {
-    padding-top: .65em;
-    cursor: none;
-}
-
-header {
-    margin-top: 2em;
-    /* padding: .5em; */
-}
-
-.container-nav {
+.grid-header {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0;
+    margin-top: 1.5em;
+    padding: 1em;
+    grid-column: 1 / -1;
 }
 
-header img {
-    padding-top: 0.3em;
-    cursor: none;
+#header-logo {
+    padding-left: .75em;
 }
 
-nav ul {
-    list-style-type: none;
+.header-nav {
     display: flex;
 }
 
-nav li {
-    font-size: .75rem;
-    padding: 0 1rem;
-}
-
-nav a {
-    color: inherit;
-    color: #707070;
+.header-nav a {
+    font-size: .75em;
+    margin: 1.5em;
+    font-weight: 300;
     cursor: default;
 }
-
-nav a:hover,
-nav a:focus {
-    color: #FB4C85;
-    font-weight: 900;
+.header-nav a:hover {
+    text-transform: uppercase;
 }
 
-.current-page {
-    color: #8751F1;
-    font-weight: 900;
-    border-bottom: 1px solid #8751F1;
+#current-page {
+    text-transform: uppercase;
+    font-size: .85em;
+    font-weight: 700;
+    border-bottom: 2px solid black
 }
 
-.current-page:hover {
-    color: #8751F1;
+.grid-aside {
+    position: fixed;
+    z-index: 1;
+    bottom: 35%;
+    left: 48px;
+    overflow-x: hidden;
+    font-size: 1.5em;
 }
 
-
-
-
-
-/* Content */
-.svg-main {
-    float: right;
-    width: 55%;
-    /* border: 2px solid red; */
+.grid-aside ul {
+    padding: 0;
+    margin: 0;
 }
 
-tspan {
-    cursor: none;
+.grid-aside i {
+    padding-bottom: .5em;
 }
 
-.container-deets {
-    padding-left: 1em;
-    cursor: none;
-    float: left;
-    align-content: center;
-}
-
-main {
-    /* border: 2px solid black; */
-    margin-top: 4em;
+.grid-main {
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
 }
 
 #ikiliagwu-eloke {
-    color: #8751F1;
-    margin: 0;
-    font-size: 4em;
-    text-shadow: var(--text-border);
     font-weight: 100;
+    font-size: 3.5em;
+    margin-bottom: 0;
 }
 
-#front-end, #enthusiast {
-    color: #FB4C85;
+#front-end {
     margin: 0;
-    text-align: right;
-    font-size: 1em;
-    font-weight: lighter;
-    text-shadow: var(--text-border);
 }
 
-aside {
-    float: left;
-}
-
-aside ul {
-    margin-left: 1em;
-    position: absolute;
-    top: 50%;
-    padding: 0;
-    list-style-type: none;
-    
-}
-
-aside li {
-    /* border: 2px solid blue; */
+#ui-ux {
     margin: 0;
-    border-bottom: 2px solid #FAD141;
 }
 
-ul hr {
-    margin-top: 0;
-    width: 20px;
-    border: 2px solid #FAD141;
+.grid-section {
+    grid-column: 3 / 4;
+    grid-row-gap: 2 / 3;
 }
 
-.font-awesome {
-    font-size: 1em;
-    margin: .15em 0;
-    padding-top: .5rem;
-    text-shadow: var(--text-border);
-    
+.grid-footer {
+    grid-column: 1 / -1;
+    font-size: .75em;
+    display: flex;
+    justify-content: center;
 }
 
-/* .fa-github {
-    color: #000;
+.fa-arrow-circle-up {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
 }
-.fa-github:hover {
-    color: #211f1f;
-}
-
-.fa-medium-m {
-    color: #000;
-}
-.fa-medium-m:hover {
-    border-color: #211f1f;
-    color: #211f1f;
-}
-.fa-envelope {
-    color: #d44638;
-}
-.fa-envelope:hover {
-    border-color: #d44638;
-    color: #F13D2C;
-}
-
-.fa-twitter{
-    color: #55acee;
-}
-.fa-twitter:hover {
-    border-color: #1da1f2;
-    color: #1da1f2;
-}
-
-.fa-linkedin {
-}
-.fa-linkedin:hover {
-    border-color: #0e76a8;
-    color: #0e76a8;
-} */

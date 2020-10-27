@@ -131,10 +131,6 @@ body {
     margin-bottom: .5em;
 }
 
-.icon-links a {
-    /* font-weight: 100; */
-}
-
 .icon-links a:hover {
     cursor: default;
     font-size: 1.45rem;

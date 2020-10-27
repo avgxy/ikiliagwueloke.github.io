@@ -19,53 +19,75 @@
 	<script src="script.js" defer></script>
 	<!-- Font Awesome Kit Code-->
 	<script src="https://kit.fontawesome.com/60c577ea36.js" crossorigin="anonymous"></script>
+	<!-- Anchor Links Smooth Scrolling-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="header.js" defer></script> -->
 </head>
 
 
 <body>
-	<header id="grid-header">
-		<div id="header-logo">
-			<svg xmlns="http://www.w3.org/2000/svg" width="53.5" height="30.915" viewBox="0 0 53.5 50.915">
-				<g id="Group_37" data-name="Group 37" transform="translate(-704 -8.423)">
-				  <path id="Path_84" data-name="Path 84" d="M.476,5.053C-1.6,11.789,3.578,32,7.385,32S17.432,11.789,15.7,5.053,2.556-1.684.476,5.053Z" transform="translate(754.5 9.5) rotate(90)" fill="#fff" stroke="#070707" stroke-width="2"/>
-				  <path id="Path_86" data-name="Path 86" d="M.476,2.053C-1.6,8.789,3.578,32,7.385,32S17.432,8.789,15.7,2.053,2.556-4.684.476,2.053Z" transform="translate(753.5 25.976) rotate(90)" fill="#fff" stroke="#070707" stroke-width="2"/>
-				  <path id="Path_87" data-name="Path 87" d="M.476,5.053C-1.6,11.789,3.578,32,7.385,32S17.432,11.789,15.7,5.053,2.556-1.684.476,5.053Z" transform="translate(754.5 42.279) rotate(90)" fill="#fff" stroke="#070707" stroke-width="2"/>
-				  <path id="Path_85" data-name="Path 85" d="M.476,5.053C-1.6,11.789,3.578,32,7.385,32S17.432,11.789,15.7,5.053,2.556-1.684.476,5.053Z" transform="translate(720 58.279) rotate(180)"/>
-				  <g id="Path_145" data-name="Path 145" transform="translate(704 9)">
-					<path d="M 8 15 C 4.140190124511719 15 1 11.85980987548828 1 8 C 1 4.140190124511719 4.140190124511719 1 8 1 C 11.85980987548828 1 15 4.140190124511719 15 8 C 15 11.85980987548828 11.85980987548828 15 8 15 Z" stroke="none"/>
-					<path d="M 8 2 C 4.691590309143066 2 2 4.691590309143066 2 8 C 2 11.30841064453125 4.691590309143066 14 8 14 C 11.30841064453125 14 14 11.30841064453125 14 8 C 14 4.691590309143066 11.30841064453125 2 8 2 M 8 0 C 12.41827964782715 0 16 3.581720352172852 16 8 C 16 12.41827964782715 12.41827964782715 16 8 16 C 3.581720352172852 16 0 12.41827964782715 0 8 C 0 3.581720352172852 3.581720352172852 0 8 0 Z" stroke="none" fill="#fff"/>
-				  </g>
-				</g>
-			  </svg>
-		</div> <!-- headr-logo-->
-		<nav>
-			<ul class="header-nav">
-				<li><a href="" id="current-page">Home</a></li>
-				<li><a href="" >About</a></li>
-				<li><a href="">Blog</a></li>
-				<li><a href="">Projects</a></li>
-			</ul>
-		</nav> <!-- header-nav-->
-	</header>
+	<div id="home">
+		<header id="grid-header">
+			<div id="header-logo">
+				<svg xmlns="http://www.w3.org/2000/svg" width="53.5" height="30.915" viewBox="0 0 53.5 50.915">
+					<g id="Group_37" data-name="Group 37" transform="translate(-704 -8.423)">
+						<path id="Path_84" data-name="Path 84" d="M.476,5.053C-1.6,11.789,3.578,32,7.385,32S17.432,11.789,15.7,5.053,2.556-1.684.476,5.053Z" transform="translate(754.5 9.5) rotate(90)" fill="#fff" stroke="#070707" stroke-width="2"/>
+						<path id="Path_86" data-name="Path 86" d="M.476,2.053C-1.6,8.789,3.578,32,7.385,32S17.432,8.789,15.7,2.053,2.556-4.684.476,2.053Z" transform="translate(753.5 25.976) rotate(90)" fill="#fff" stroke="#070707" stroke-width="2"/>
+						<path id="Path_87" data-name="Path 87" d="M.476,5.053C-1.6,11.789,3.578,32,7.385,32S17.432,11.789,15.7,5.053,2.556-1.684.476,5.053Z" transform="translate(754.5 42.279) rotate(90)" fill="#fff" stroke="#070707" stroke-width="2"/>
+						<path id="Path_85" data-name="Path 85" d="M.476,5.053C-1.6,11.789,3.578,32,7.385,32S17.432,11.789,15.7,5.053,2.556-1.684.476,5.053Z" transform="translate(720 58.279) rotate(180)"/>
+						<g id="Path_145" data-name="Path 145" transform="translate(704 9)">
+						<path d="M 8 15 C 4.140190124511719 15 1 11.85980987548828 1 8 C 1 4.140190124511719 4.140190124511719 1 8 1 C 11.85980987548828 1 15 4.140190124511719 15 8 C 15 11.85980987548828 11.85980987548828 15 8 15 Z" stroke="none"/>
+						<path d="M 8 2 C 4.691590309143066 2 2 4.691590309143066 2 8 C 2 11.30841064453125 4.691590309143066 14 8 14 C 11.30841064453125 14 14 11.30841064453125 14 8 C 14 4.691590309143066 11.30841064453125 2 8 2 M 8 0 C 12.41827964782715 0 16 3.581720352172852 16 8 C 16 12.41827964782715 12.41827964782715 16 8 16 C 3.581720352172852 16 0 12.41827964782715 0 8 C 0 3.581720352172852 3.581720352172852 0 8 0 Z" stroke="none" fill="#fff"/>
+						</g>
+					</g>
+				</svg>
+			</div> <!-- headr-logo-->
+	
+			<nav>
+				<ul class="header-nav">
+					<li><a href="#home" id="current-page">Home</a></li>
+					<li><a href="#about" >About</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#projects">Projects</a></li>
+				</ul>
+			</nav> <!-- header-nav-->
+		</header>
+	
+		<main class="grid-main">
+			<div class="main-text">
+				<h1 id="ikiliagwu-eloke">Ikiliagwu Eloke</h1>
+				Front-End Web Developer <br> UI-UX Enthusiast
+			</div>
+		</main>
+	
+		<aside>
+			<div class="icon-links">
+				<li><a href="https://medium.com/@ikiliagwueloke" target="_blank"><i class="fab fa-medium-m font-awesome fa-fw"></i></a></li>
+				<li><a href="https://github.com/ikiliagwueloke" target="_blank"><i class="fab fa-github font-awesome fa-fw"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/ikiliagwu-eloke-a02300167" target="_blank"><i class="fab fa-linkedin font-awesome fa-fw"></i></a></li>
+				<li><a href="https://twitter.com/ikiliagwueloke" target="_blank"><i class="fab fa-twitter font-awesome fa-fw"></i></a></li>
+				<li><a href="mailto:ikiliagwueloke@gmail.com" target="_blank"><i class="far fa-envelope font-awesome fa-fw"></i></a></li>
+			</div>
+		</aside>
+	</div> <!-- home -->
 
-	<main class="grid-main">
-		<div class="main-text">
-			<h1 id="ikiliagwu-eloke">Ikiliagwu Eloke</h1>
-			Front-End Web Developer <br> UI-UX Enthusiast
-		</div>
-	</main>
+	<section id="about">
+	</section>
 
-	<aside>
-		<div class="icon-links">
-			<li><a href="https://github.com/ikiliagwueloke" target="_blank"><i class="fab fa-github font-awesome fa-fw"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/ikiliagwu-eloke-a02300167" target="_blank"><i class="fab fa-linkedin font-awesome fa-fw"></i></a></li>
-			<li><a href="mailto:ikiliagwueloke@gmail.com" target="_blank"><i class="far fa-envelope font-awesome fa-fw"></i></a></li>
-			<li><a href="https://medium.com/@ikiliagwueloke" target="_blank"><i class="fab fa-medium-m font-awesome fa-fw"></i></a></li>
-			<li><a href="https://twitter.com/ikiliagwueloke" target="_blank"><i class="fab fa-twitter font-awesome fa-fw"></i></a></li>
-		</div>
-	</aside>
-	  
+	<section id="blog">
+	</section>
 
+	<section id="projects">
+	</section>
+
+	<footer>
+		&copy; Ikiliagwu Eloke
+	</footer>
+
+	<button id="top-button" onclick="topFunction()" title="Go to top">
+		<a href="#home"><i id="top-icon" class="fas fa-angle-double-up fa-fw"></i></a>
+	</button>
+	
 </body>
 
 

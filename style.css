@@ -112,7 +112,7 @@ body {
 
 @media (max-width: 975px) {
     .grid-main {
-        margin: 12em 2em;
+        margin: 0 2em;
     }
 
     .main-text {
@@ -134,19 +134,4 @@ body {
 .icon-links a:hover {
     cursor: default;
     font-size: 1.45rem;
-}
-
-.pattern-1 {
-    position: absolute;
-    top: -12%;
-    right: -5%;
-    z-index: -1;
-}
-
-.pattern-2 {
-    position: absolute;
-}
-
-.pattern-3 {
-    position: absolute;
 }
